@@ -25,7 +25,7 @@
 #include <fst/types.h>
 #include <fst/flags.h>
 
-DECLARE_int32(openfst_v);
+DECLARE_int32(fst_v);
 
 class LogMessage {
  public:
@@ -44,7 +44,7 @@ class LogMessage {
 };
 
 #define LOG(type) LogMessage(#type).stream()
-#define VLOG(level) if ((level) <= FLAGS_openfst_v) LOG(INFO)
+#define VLOG(level) if ((level) <= FLAGS_fst_v) LOG(INFO)
 
 // Checks
 inline void FstCheck(bool x, const char* expr,

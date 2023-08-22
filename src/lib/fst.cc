@@ -28,6 +28,8 @@
 
 // FST flag definitions.
 
+DEFINE_int32(fst_v, 0, "FST log level, same as glog");
+
 DEFINE_bool(fst_verify_properties, false,
             "Verify FST properties queried by TestProperties");
 
