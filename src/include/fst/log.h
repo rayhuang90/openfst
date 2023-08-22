@@ -25,7 +25,9 @@
 #include <fst/types.h>
 #include <fst/flags.h>
 
+#ifndef FLAGS_v
 DECLARE_int32(v);
+#endif
 
 class LogMessage {
  public:
